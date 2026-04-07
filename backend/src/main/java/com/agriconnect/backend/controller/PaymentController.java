@@ -74,11 +74,11 @@ public class PaymentController {
             paymentService.verifyPayment(txnId, payuId, status, hash, mode);
             // ✅ FIXED: /payment-success ला redirect करा
             response.sendRedirect(
-                    "http://localhost:5173/payment-success?status=success&txnid=" + txnId);
+                    "https://business-connector-git-main-nitinmuragis-projects.vercel.app/payment-success?status=success&txnid=" + txnId);
         } catch (Exception e) {
             System.out.println("❌ Payment verification failed: " + e.getMessage());
             response.sendRedirect(
-                    "http://localhost:5173/payment-success?status=failed&txnid=" + txnId);
+                    "https://business-connector-git-main-nitinmuragis-projects.vercel.app/payment-success?status=failed&txnid=" + txnId);
         }
     }
 
@@ -103,7 +103,7 @@ public class PaymentController {
 
         // ✅ FIXED: /payment-success ला redirect करा (failed status सह)
         response.sendRedirect(
-                "http://localhost:5173/payment-success?status=failed&txnid=" + txnId);
+                "https://business-connector-git-main-nitinmuragis-projects.vercel.app/payment-success?status=failed&txnid=" + txnId);
     }
 
     // ── GET TRANSACTIONS ───────────────────────────────────────────────────

@@ -127,7 +127,8 @@ public class SecurityConfig {
                 appConfig.setAllowedOrigins(List.of(
                                 "http://localhost:5173",
                                 "http://localhost:5174",
-                                "http://localhost:5175"));
+                                "http://localhost:5175",
+                                "https://business-connector-git-main-nitinmuragis-projects.vercel.app"));
                 appConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
                 appConfig.setAllowedHeaders(List.of("*"));
                 appConfig.setAllowCredentials(true);

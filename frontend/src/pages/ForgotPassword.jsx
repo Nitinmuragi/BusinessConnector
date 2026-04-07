@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, ChevronRight, Globe, Smartphone, Mail, Eye, EyeOff, CheckCircle } from 'lucide-react';
 
-const PROD_API_BASE_URL = 'https://agri-connect-backend-ltjk.onrender.com';
+const PROD_API_BASE_URL = 'https://businessconnector.onrender.com';
 const DEFAULT_API_BASE_URL = import.meta.env.PROD ? PROD_API_BASE_URL : 'http://localhost:8080';
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || DEFAULT_API_BASE_URL;
 const API = `${API_BASE_URL}/api/auth/forgot-password`;

@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/dashboard")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-git-main-nitinmuragis-projects.vercel.app" })
 @RequiredArgsConstructor
 public class DashboardController {
 

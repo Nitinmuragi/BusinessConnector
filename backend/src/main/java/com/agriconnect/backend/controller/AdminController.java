@@ -22,7 +22,7 @@ import org.springframework.http.MediaType;
 
 @RestController
 @RequestMapping("/api/admin")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-git-main-nitinmuragis-projects.vercel.app" })
 @RequiredArgsConstructor
 public class AdminController {
 
