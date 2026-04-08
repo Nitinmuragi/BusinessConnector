@@ -122,13 +122,20 @@ public class SecurityConfig {
                 source.registerCorsConfiguration("/api/payments/failure", payuConfig);
                 source.registerCorsConfiguration("/api/payments/webhook", payuConfig);
 
-                // React app — सगळे ports
+                // React app — सगळे allowed origins
                 CorsConfiguration appConfig = new CorsConfiguration();
                 appConfig.setAllowedOrigins(List.of(
+                                // Local development
                                 "http://localhost:5173",
                                 "http://localhost:5174",
                                 "http://localhost:5175",
-                                "https://business-connector-git-main-nitinmuragis-projects.vercel.app"));
+                                "http://localhost:3000",
+                                // ✅ ADD YOUR ACTUAL VERCEL PRODUCTION URLS
+                                "https://business-connector.vercel.app",
+                                "https://business-connector-git-main-nitinmuragis-projects.vercel.app",
+                                // ✅ ADD YOUR RENDER BACKEND URL (for self-calls)
+                                "https://businessconnector.onrender.com"
+                ));
                 appConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
                 appConfig.setAllowedHeaders(List.of("*"));
                 appConfig.setAllowCredentials(true);
