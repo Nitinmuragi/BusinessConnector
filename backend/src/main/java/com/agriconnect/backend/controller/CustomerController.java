@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/customer")
-@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-git-main-nitinmuragis-projects.vercel.app" })
+@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-7g1m12yo5-nitinmuragis-projects.vercel.app" })
 @RequiredArgsConstructor
 public class CustomerController {
 

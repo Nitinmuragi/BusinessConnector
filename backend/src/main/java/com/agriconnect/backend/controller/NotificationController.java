@@ -12,7 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/notifications")
-@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-git-main-nitinmuragis-projects.vercel.app" }) // ← same as your other controllers
+@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-7g1m12yo5-nitinmuragis-projects.vercel.app" }) // ← same as your other controllers
 @RequiredArgsConstructor
 public class NotificationController {
 

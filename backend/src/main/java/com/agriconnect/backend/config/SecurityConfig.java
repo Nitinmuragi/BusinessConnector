@@ -132,10 +132,9 @@ public class SecurityConfig {
                                 "http://localhost:3000",
                                 // ✅ ADD YOUR ACTUAL VERCEL PRODUCTION URLS
                                 "https://business-connector.vercel.app",
-                                "https://business-connector-git-main-nitinmuragis-projects.vercel.app",
+                                "https://business-connector-7g1m12yo5-nitinmuragis-projects.vercel.app",
                                 // ✅ ADD YOUR RENDER BACKEND URL (for self-calls)
-                                "https://businessconnector.onrender.com"
-                ));
+                                "https://businessconnector.onrender.com"));
                 appConfig.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"));
                 appConfig.setAllowedHeaders(List.of("*"));
                 appConfig.setAllowCredentials(true);

@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/market-prices")
-@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-git-main-nitinmuragis-projects.vercel.app" })
+@CrossOrigin(origins = { "http://localhost:5173", "https://business-connector-7g1m12yo5-nitinmuragis-projects.vercel.app" })
 public class MarketPriceController {
 
         @Value("${datagov.api.key}")
