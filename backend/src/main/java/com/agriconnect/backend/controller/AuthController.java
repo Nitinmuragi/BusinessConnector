@@ -14,6 +14,7 @@ import com.agriconnect.backend.service.Fast2SmsService;
 @RestController
 @RequestMapping("/api/auth")
 @CrossOrigin(origins = { "http://localhost:5173",
+        "https://business-connector.vercel.app",
         "https://business-connector-7g1m12yo5-nitinmuragis-projects.vercel.app" })
 @RequiredArgsConstructor
 public class AuthController {
